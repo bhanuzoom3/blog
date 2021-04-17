@@ -7,10 +7,6 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./data
-
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
@@ -29,4 +25,3 @@ jobs:
           access-token: ${{ secrets.GITHUB_TOKEN }}
           deploy-branch: gh-pages
           gatsby-args: --prefix-paths
-          CLEAN: true # Automatically remove deleted files from the deploy branch
