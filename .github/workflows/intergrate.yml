@@ -24,7 +24,6 @@ jobs:
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}
 
       - name: Deploy 🚀
-      - run : echo Deploying Build Please wait...
         uses: enriikke/gatsby-gh-pages-action@v2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
