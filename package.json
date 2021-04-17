@@ -8,7 +8,7 @@
     "build": "next build && node ./scripts/generate-sitemap",
     "serve": "next start",
     "analyze": "env ANALYZE=true next build",
-    "deploy": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages"
+    "deploy": "rm -rf node_modules/.cache && rimraf out && next build && next start && touch out/.nojekyll && git add out/ && git commit -m \"Deploy blog to gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "@mapbox/rehype-prism": "^0.5.0",
