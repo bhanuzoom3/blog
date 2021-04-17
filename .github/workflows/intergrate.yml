@@ -1,4 +1,4 @@
-name: Build and Deploy NextJS Blog to Github Pages
+name: Build and Deploy Gatsby Blog to Github Pages
 on:
   push:
     branches: [ main ]
