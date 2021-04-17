@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Bhanu Blog`,
-    descrption: `Bhanu Blog based on Tailwind`,
+    descrption: `Bhanu Blog built with Gatsby and Tailwind CSS.`,
     author: `@Bhanu`,
   },
   plugins: [
