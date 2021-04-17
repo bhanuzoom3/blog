@@ -3,7 +3,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 })
 const debug = process.env.NODE_ENV !== 'production'
 module.exports = withBundleAnalyzer({
-  assetPrefix: !debug ? '/bhanuzoom3.github.io/' : '',
+  assetPrefix: !debug ? '/blog/' : '',
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
   future: {
